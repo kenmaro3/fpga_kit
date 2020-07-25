@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	/home/vagrant/shared/K02_SEC10_2/K02_SEC10_2_tmp_archive.qarlog
+
+Archive:	/home/vagrant/shared/K02_SEC10_2/K02_SEC10_2_tmp_archive.qar
+Date:		Sun Jul  5 09:26:18 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/K02_SEC10_2/K02_SEC10_2.qpf
+/home/vagrant/shared/K02_SEC10_2/LogicFunc.v
+/home/vagrant/shared/K02_SEC10_2/Seg7Dec.v
+/home/vagrant/shared/K02_SEC10_2/TopModule.qsf
+/home/vagrant/shared/K02_SEC10_2/TopModule.v
+/home/vagrant/shared/K02_SEC10_2/assignment_defaults.qdf
+/home/vagrant/shared/K02_SEC10_2/sec10.sdc
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Jul  5 09:26:19 2020
+Source archive file:	/home/vagrant/shared/K02_SEC10_2/K02_SEC10_2_tmp_archive.qar
+Archive was extracted into	/home/vagrant/shared/K03_CLOCK24/
+		 - successfully.

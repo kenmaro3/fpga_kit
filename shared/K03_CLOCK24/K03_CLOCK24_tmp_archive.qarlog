@@ -1,0 +1,35 @@
+Quartus Prime Archive log --	/home/vagrant/shared/K03_CLOCK24/K03_CLOCK24_tmp_archive.qarlog
+
+Archive:	/home/vagrant/shared/K03_CLOCK24/K03_CLOCK24_tmp_archive.qar
+Date:		Sun Jul  5 12:14:12 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/K03_CLOCK24/K03_CLOCK24.qpf
+/home/vagrant/shared/K03_CLOCK24/LogicFunc.v
+/home/vagrant/shared/K03_CLOCK24/Seg7Dec.v
+/home/vagrant/shared/K03_CLOCK24/TopModule.qsf
+/home/vagrant/shared/K03_CLOCK24/TopModule.restore.rpt
+/home/vagrant/shared/K03_CLOCK24/TopModule.v
+/home/vagrant/shared/K03_CLOCK24/assignment_defaults.qdf
+/home/vagrant/shared/K03_CLOCK24/cnt1sec.v
+/home/vagrant/shared/K03_CLOCK24/hourcnt.v
+/home/vagrant/shared/K03_CLOCK24/mincnt.v
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.flow.rpt
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.rpt
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.smsg
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.summary
+/home/vagrant/shared/K03_CLOCK24/sec10.sdc
+/home/vagrant/shared/K03_CLOCK24/seccnt.v
+/home/vagrant/shared/K03_CLOCK24/seg7dec.v
+/home/vagrant/shared/K03_CLOCK24/state.v
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Jul  5 12:14:13 2020
+Source archive file:	/home/vagrant/shared/K03_CLOCK24/K03_CLOCK24_tmp_archive.qar
+Archive was extracted into	/home/vagrant/shared/K03_CLOCK24_2/
+		 - successfully.

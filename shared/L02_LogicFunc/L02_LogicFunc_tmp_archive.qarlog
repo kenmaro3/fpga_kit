@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	/home/vagrant/shared/L02_LogicFunc/L02_LogicFunc_tmp_archive.qarlog
+
+Archive:	/home/vagrant/shared/L02_LogicFunc/L02_LogicFunc_tmp_archive.qar
+Date:		Sat Jul  4 18:59:00 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/L02_LogicFunc/L02_LogicFunc.qpf
+/home/vagrant/shared/L02_LogicFunc/LogicFunc.v
+/home/vagrant/shared/L02_LogicFunc/TopModule.qsf
+/home/vagrant/shared/L02_LogicFunc/TopModule.v
+/home/vagrant/shared/L02_LogicFunc/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Jul  4 18:59:02 2020
+Source archive file:	/home/vagrant/shared/L02_LogicFunc/L02_LogicFunc_tmp_archive.qar
+Archive was extracted into	/home/vagrant/shared/K01_SEG7DEC/
+		 - successfully.

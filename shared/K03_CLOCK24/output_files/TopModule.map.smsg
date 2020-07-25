@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at seccnt.v(10): always construct contains both blocking and non-blocking assignments File: /home/vagrant/shared/K03_CLOCK24/seccnt.v Line: 10
+Warning (10268): Verilog HDL information at seccnt.v(23): always construct contains both blocking and non-blocking assignments File: /home/vagrant/shared/K03_CLOCK24/seccnt.v Line: 23

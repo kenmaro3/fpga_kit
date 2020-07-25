@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK1'
+Slack : -3.520
+TNS   : -47.685
+
+Type  : Slow 1200mV 85C Model Setup 'm_clock9600:c0|rclk2x'
+Slack : -1.817
+TNS   : -14.806
+
+Type  : Slow 1200mV 85C Model Setup 'm_clock9600:c0|rclk'
+Slack : -0.247
+TNS   : -0.638
+
+Type  : Slow 1200mV 85C Model Hold 'CLK1'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'm_clock9600:c0|rclk'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'm_clock9600:c0|rclk2x'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -43.687
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_clock9600:c0|rclk2x'
+Slack : -1.403
+TNS   : -19.642
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_clock9600:c0|rclk'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'CLK1'
+Slack : -3.225
+TNS   : -40.669
+
+Type  : Slow 1200mV 0C Model Setup 'm_clock9600:c0|rclk2x'
+Slack : -1.549
+TNS   : -12.596
+
+Type  : Slow 1200mV 0C Model Setup 'm_clock9600:c0|rclk'
+Slack : -0.143
+TNS   : -0.330
+
+Type  : Slow 1200mV 0C Model Hold 'CLK1'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'm_clock9600:c0|rclk'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'm_clock9600:c0|rclk2x'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -43.687
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_clock9600:c0|rclk2x'
+Slack : -1.403
+TNS   : -19.642
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_clock9600:c0|rclk'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'CLK1'
+Slack : -1.044
+TNS   : -4.660
+
+Type  : Fast 1200mV 0C Model Setup 'm_clock9600:c0|rclk2x'
+Slack : -0.134
+TNS   : -0.247
+
+Type  : Fast 1200mV 0C Model Setup 'm_clock9600:c0|rclk'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK1'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'm_clock9600:c0|rclk'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'm_clock9600:c0|rclk2x'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -33.068
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_clock9600:c0|rclk2x'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_clock9600:c0|rclk'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

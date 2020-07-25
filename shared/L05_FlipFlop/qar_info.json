@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/vagrant/shared/L04_RS_FlipFlop/",
+	"acds_version" : "Version 20.1.0",
+	"platform" : "linux",
+	"os" : "Ubuntu 18.04.4",
+	"qpf" : "L04_RS_FlipFlop.qpf"
+}

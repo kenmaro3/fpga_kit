@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	/home/vagrant/shared/L04_RS_FlipFlop/L04_RS_FlipFlop_tmp_archive.qarlog
+
+Archive:	/home/vagrant/shared/L04_RS_FlipFlop/L04_RS_FlipFlop_tmp_archive.qar
+Date:		Sat Jun 27 18:08:36 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/L04_RS_FlipFlop/L04_RS_FlipFlop.qpf
+/home/vagrant/shared/L04_RS_FlipFlop/LogicFunc.v
+/home/vagrant/shared/L04_RS_FlipFlop/RS_FlipFlop.v
+/home/vagrant/shared/L04_RS_FlipFlop/Selector.v
+/home/vagrant/shared/L04_RS_FlipFlop/TopModule.qsf
+/home/vagrant/shared/L04_RS_FlipFlop/TopModule.v
+/home/vagrant/shared/L04_RS_FlipFlop/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Jun 27 18:08:37 2020
+Source archive file:	/home/vagrant/shared/L04_RS_FlipFlop/L04_RS_FlipFlop_tmp_archive.qar
+Archive was extracted into	/home/vagrant/shared/L05_FlipFlop/
+		 - successfully.

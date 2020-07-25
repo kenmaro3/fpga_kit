@@ -1,0 +1,229 @@
+|TopModule
+CLK1 => CLK1.IN2
+CLK2 => ~NO_FANOUT~
+HEX0[0] << m_seven_segment:s0.port1
+HEX0[1] << m_seven_segment:s0.port1
+HEX0[2] << m_seven_segment:s0.port1
+HEX0[3] << m_seven_segment:s0.port1
+HEX0[4] << m_seven_segment:s0.port1
+HEX0[5] << m_seven_segment:s0.port1
+HEX0[6] << m_seven_segment:s0.port1
+HEX0[7] << m_seven_segment:s0.port1
+HEX1[0] << m_seven_segment:s1.port1
+HEX1[1] << m_seven_segment:s1.port1
+HEX1[2] << m_seven_segment:s1.port1
+HEX1[3] << m_seven_segment:s1.port1
+HEX1[4] << m_seven_segment:s1.port1
+HEX1[5] << m_seven_segment:s1.port1
+HEX1[6] << m_seven_segment:s1.port1
+HEX1[7] << m_seven_segment:s1.port1
+HEX2[0] << <VCC>
+HEX2[1] << <VCC>
+HEX2[2] << <VCC>
+HEX2[3] << <VCC>
+HEX2[4] << <VCC>
+HEX2[5] << <VCC>
+HEX2[6] << <VCC>
+HEX2[7] << <VCC>
+HEX3[0] << <VCC>
+HEX3[1] << <VCC>
+HEX3[2] << <VCC>
+HEX3[3] << <VCC>
+HEX3[4] << <VCC>
+HEX3[5] << <VCC>
+HEX3[6] << <VCC>
+HEX3[7] << <VCC>
+HEX4[0] << m_seven_segment:s2.port1
+HEX4[1] << m_seven_segment:s2.port1
+HEX4[2] << m_seven_segment:s2.port1
+HEX4[3] << m_seven_segment:s2.port1
+HEX4[4] << m_seven_segment:s2.port1
+HEX4[5] << m_seven_segment:s2.port1
+HEX4[6] << m_seven_segment:s2.port1
+HEX4[7] << m_seven_segment:s2.port1
+HEX5[0] << m_seven_segment:s3.port1
+HEX5[1] << m_seven_segment:s3.port1
+HEX5[2] << m_seven_segment:s3.port1
+HEX5[3] << m_seven_segment:s3.port1
+HEX5[4] << m_seven_segment:s3.port1
+HEX5[5] << m_seven_segment:s3.port1
+HEX5[6] << m_seven_segment:s3.port1
+HEX5[7] << m_seven_segment:s3.port1
+BTN[0] => BTN[0].IN1
+BTN[1] => ~NO_FANOUT~
+LED[0] << <GND>
+LED[1] << <GND>
+LED[2] << <GND>
+LED[3] << <GND>
+LED[4] << <GND>
+LED[5] << <GND>
+LED[6] << <GND>
+LED[7] << <GND>
+LED[8] << <GND>
+LED[9] << <GND>
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => ~NO_FANOUT~
+SW[9] => sdata.OUTPUTSELECT
+ex_sin => sdata.DATAB
+ex_sout << m_serial_tx:u1.port3
+
+
+|TopModule|m_clock9600:c0
+clk => rclk2x.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+sclk2x <= rclk2x.DB_MAX_OUTPUT_PORT_TYPE
+sclk <= rclk.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_chattering:u0
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+sw_in => swreg.DATAIN
+sw_out <= swreg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_serial_tx:u1
+sclk => cnt[0].CLK
+sclk => cnt[1].CLK
+sclk => cnt[2].CLK
+sclk => cnt[3].CLK
+n_start => n_start.IN1
+dat[0] => Mux0.IN19
+dat[1] => Mux0.IN18
+dat[2] => Mux0.IN17
+dat[3] => Mux0.IN16
+dat[4] => Mux0.IN15
+dat[5] => Mux0.IN14
+dat[6] => Mux0.IN13
+dat[7] => Mux0.IN12
+sout <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_serial_tx:u1|m_rs_flipflop:comb_19
+set => q.IN1
+reset => nq.IN0
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_serial_rx:u2
+sclk2x => sreg[0].CLK
+sclk2x => sreg[1].CLK
+sclk2x => sreg[2].CLK
+sclk2x => sreg[3].CLK
+sclk2x => sreg[4].CLK
+sclk2x => sreg[5].CLK
+sclk2x => sreg[6].CLK
+sclk2x => sreg[7].CLK
+sclk2x => cnt[0].CLK
+sclk2x => cnt[1].CLK
+sclk2x => cnt[2].CLK
+sclk2x => cnt[3].CLK
+sclk2x => cnt[4].CLK
+sin => cnt.OUTPUTSELECT
+sin => cnt.OUTPUTSELECT
+sin => cnt.OUTPUTSELECT
+sin => cnt.OUTPUTSELECT
+sin => cnt.OUTPUTSELECT
+sin => sreg[7].DATAIN
+dat[0] <= sreg[0].DB_MAX_OUTPUT_PORT_TYPE
+dat[1] <= sreg[1].DB_MAX_OUTPUT_PORT_TYPE
+dat[2] <= sreg[2].DB_MAX_OUTPUT_PORT_TYPE
+dat[3] <= sreg[3].DB_MAX_OUTPUT_PORT_TYPE
+dat[4] <= sreg[4].DB_MAX_OUTPUT_PORT_TYPE
+dat[5] <= sreg[5].DB_MAX_OUTPUT_PORT_TYPE
+dat[6] <= sreg[6].DB_MAX_OUTPUT_PORT_TYPE
+dat[7] <= sreg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_seven_segment:s0
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:s1
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:s2
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:s3
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+

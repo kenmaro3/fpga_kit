@@ -1,0 +1,41 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'm_rs_flipflop:u4|q~1'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'm_rs_flipflop:u4|q~1'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_rs_flipflop:u4|q~1'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Setup 'm_rs_flipflop:u4|q~1'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'm_rs_flipflop:u4|q~1'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_rs_flipflop:u4|q~1'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Fast 1200mV 0C Model Setup 'm_rs_flipflop:u4|q~1'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'm_rs_flipflop:u4|q~1'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_rs_flipflop:u4|q~1'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

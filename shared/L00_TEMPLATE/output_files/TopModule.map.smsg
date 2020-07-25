@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at TopModule.v(13): object "BTN" differs only in case from object "btn" in the same scope File: /home/vagrant/shared/L00_TEMPLATE/TopModule.v Line: 13

@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK1'
+Slack : -1.920
+TNS   : -17.087
+
+Type  : Slow 1200mV 85C Model Setup 'm_chattering:u0|swreg'
+Slack : -0.908
+TNS   : -3.788
+
+Type  : Slow 1200mV 85C Model Hold 'm_chattering:u0|swreg'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK1'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -25.448
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_chattering:u0|swreg'
+Slack : -1.403
+TNS   : -9.821
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'CLK1'
+Slack : -1.601
+TNS   : -13.960
+
+Type  : Slow 1200mV 0C Model Setup 'm_chattering:u0|swreg'
+Slack : -0.752
+TNS   : -2.991
+
+Type  : Slow 1200mV 0C Model Hold 'm_chattering:u0|swreg'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK1'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -25.448
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|swreg'
+Slack : -1.403
+TNS   : -9.821
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'CLK1'
+Slack : -0.772
+TNS   : -0.772
+
+Type  : Fast 1200mV 0C Model Setup 'm_chattering:u0|swreg'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'm_chattering:u0|swreg'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK1'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -19.560
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|swreg'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_chattering:u0|cnt[15]'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

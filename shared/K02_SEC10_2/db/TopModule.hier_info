@@ -1,0 +1,164 @@
+|TopModule
+CLK1 => clk.IN1
+BTN[0] => ~NO_FANOUT~
+BTN[1] => ~NO_FANOUT~
+HEX0[0] <= m_seven_dec:sd1.port1
+HEX0[1] <= m_seven_dec:sd1.port1
+HEX0[2] <= m_seven_dec:sd1.port1
+HEX0[3] <= m_seven_dec:sd1.port1
+HEX0[4] <= m_seven_dec:sd1.port1
+HEX0[5] <= m_seven_dec:sd1.port1
+HEX0[6] <= m_seven_dec:sd1.port1
+HEX1[0] <= m_seven_dec:sd2.port1
+HEX1[1] <= m_seven_dec:sd2.port1
+HEX1[2] <= m_seven_dec:sd2.port1
+HEX1[3] <= m_seven_dec:sd2.port1
+HEX1[4] <= m_seven_dec:sd2.port1
+HEX1[5] <= m_seven_dec:sd2.port1
+HEX1[6] <= m_seven_dec:sd2.port1
+LED[0] <= w_sec[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= w_sec[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= w_sec[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= w_sec[3].DB_MAX_OUTPUT_PORT_TYPE
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+
+
+|TopModule|m_1s_clk:clk0
+clk => r1s.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clk => cnt[21].CLK
+clk => cnt[22].CLK
+clk => cnt[23].CLK
+clk => cnt[24].CLK
+clk1s <= r1s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_two_digits_clock:comb_130
+clk => clk.IN2
+sec[0] <= m_up_counter:comb_3.port3
+sec[1] <= m_up_counter:comb_3.port3
+sec[2] <= m_up_counter:comb_3.port3
+sec[3] <= m_up_counter:comb_3.port3
+sec[4] <= m_up_counter:comb_4.port3
+sec[5] <= m_up_counter:comb_4.port3
+sec[6] <= m_up_counter:comb_4.port3
+sec[7] <= m_up_counter:comb_4.port3
+
+
+|TopModule|m_two_digits_clock:comb_130|m_up_counter:comb_3
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+cb_in => w_cout.IN1
+cb_in => cnt[2].ENA
+cb_in => cnt[1].ENA
+cb_in => cnt[0].ENA
+cb_in => cnt[3].ENA
+cb_out <= w_cout.DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_two_digits_clock:comb_130|m_up_counter:comb_4
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+cb_in => w_cout.IN1
+cb_in => cnt[2].ENA
+cb_in => cnt[1].ENA
+cb_in => cnt[0].ENA
+cb_in => cnt[3].ENA
+cb_out <= w_cout.DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt_out[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_seven_dec:sd1
+idat[0] => Mux0.IN19
+idat[0] => Mux1.IN19
+idat[0] => Decoder0.IN2
+idat[0] => Mux2.IN19
+idat[0] => Mux3.IN19
+idat[1] => Mux0.IN18
+idat[1] => Mux1.IN18
+idat[1] => Decoder0.IN1
+idat[1] => Mux2.IN18
+idat[1] => Mux3.IN18
+idat[2] => Mux0.IN17
+idat[2] => Mux1.IN17
+idat[2] => Decoder0.IN0
+idat[2] => Mux2.IN17
+idat[2] => Mux3.IN17
+idat[3] => Mux0.IN16
+idat[3] => Mux1.IN16
+idat[3] => Mux2.IN16
+idat[3] => Mux3.IN16
+odat[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= w_odat.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_seven_dec:sd2
+idat[0] => Mux0.IN19
+idat[0] => Mux1.IN19
+idat[0] => Decoder0.IN2
+idat[0] => Mux2.IN19
+idat[0] => Mux3.IN19
+idat[1] => Mux0.IN18
+idat[1] => Mux1.IN18
+idat[1] => Decoder0.IN1
+idat[1] => Mux2.IN18
+idat[1] => Mux3.IN18
+idat[2] => Mux0.IN17
+idat[2] => Mux1.IN17
+idat[2] => Decoder0.IN0
+idat[2] => Mux2.IN17
+idat[2] => Mux3.IN17
+idat[3] => Mux0.IN16
+idat[3] => Mux1.IN16
+idat[3] => Mux2.IN16
+idat[3] => Mux3.IN16
+odat[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= w_odat.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

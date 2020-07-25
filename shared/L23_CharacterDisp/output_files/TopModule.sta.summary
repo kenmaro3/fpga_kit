@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'm_character_disp:u0|vga_clk'
+Slack : -3.653
+TNS   : -17.125
+
+Type  : Slow 1200mV 85C Model Setup 'm_character_disp:u0|i_hs'
+Slack : -1.998
+TNS   : -13.882
+
+Type  : Slow 1200mV 85C Model Setup 'CLK1'
+Slack : -0.690
+TNS   : -0.690
+
+Type  : Slow 1200mV 85C Model Hold 'm_character_disp:u0|i_hs'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'm_character_disp:u0|vga_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK1'
+Slack : 0.647
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_character_disp:u0|vga_clk'
+Slack : -1.403
+TNS   : -16.836
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'm_character_disp:u0|i_hs'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Slow 1200mV 0C Model Setup 'm_character_disp:u0|vga_clk'
+Slack : -3.286
+TNS   : -14.710
+
+Type  : Slow 1200mV 0C Model Setup 'm_character_disp:u0|i_hs'
+Slack : -1.699
+TNS   : -11.588
+
+Type  : Slow 1200mV 0C Model Setup 'CLK1'
+Slack : -0.487
+TNS   : -0.487
+
+Type  : Slow 1200mV 0C Model Hold 'm_character_disp:u0|i_hs'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'm_character_disp:u0|vga_clk'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK1'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_character_disp:u0|vga_clk'
+Slack : -1.403
+TNS   : -16.836
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'm_character_disp:u0|i_hs'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Fast 1200mV 0C Model Setup 'm_character_disp:u0|vga_clk'
+Slack : -1.076
+TNS   : -1.596
+
+Type  : Fast 1200mV 0C Model Setup 'm_character_disp:u0|i_hs'
+Slack : -0.325
+TNS   : -0.537
+
+Type  : Fast 1200mV 0C Model Setup 'CLK1'
+Slack : -0.170
+TNS   : -0.170
+
+Type  : Fast 1200mV 0C Model Hold 'm_character_disp:u0|i_hs'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'm_character_disp:u0|vga_clk'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK1'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK1'
+Slack : -3.000
+TNS   : -4.082
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_character_disp:u0|vga_clk'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'm_character_disp:u0|i_hs'
+Slack : -1.000
+TNS   : -11.000
+
+------------------------------------------------------------

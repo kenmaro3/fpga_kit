@@ -1,0 +1,301 @@
+|TopModule
+CLK1 => ~NO_FANOUT~
+CLK2 => ~NO_FANOUT~
+HEX0[0] << m_seven_segment:u1.port1
+HEX0[1] << m_seven_segment:u1.port1
+HEX0[2] << m_seven_segment:u1.port1
+HEX0[3] << m_seven_segment:u1.port1
+HEX0[4] << m_seven_segment:u1.port1
+HEX0[5] << m_seven_segment:u1.port1
+HEX0[6] << m_seven_segment:u1.port1
+HEX0[7] << m_seven_segment:u1.port1
+HEX1[0] << m_seven_segment:u2.port1
+HEX1[1] << m_seven_segment:u2.port1
+HEX1[2] << m_seven_segment:u2.port1
+HEX1[3] << m_seven_segment:u2.port1
+HEX1[4] << m_seven_segment:u2.port1
+HEX1[5] << m_seven_segment:u2.port1
+HEX1[6] << m_seven_segment:u2.port1
+HEX1[7] << m_seven_segment:u2.port1
+HEX2[0] << m_seven_segment:u3.port1
+HEX2[1] << m_seven_segment:u3.port1
+HEX2[2] << m_seven_segment:u3.port1
+HEX2[3] << m_seven_segment:u3.port1
+HEX2[4] << m_seven_segment:u3.port1
+HEX2[5] << m_seven_segment:u3.port1
+HEX2[6] << m_seven_segment:u3.port1
+HEX2[7] << m_seven_segment:u3.port1
+HEX3[0] << <VCC>
+HEX3[1] << <VCC>
+HEX3[2] << <VCC>
+HEX3[3] << <VCC>
+HEX3[4] << <VCC>
+HEX3[5] << <VCC>
+HEX3[6] << <VCC>
+HEX3[7] << <VCC>
+HEX4[0] << m_seven_segment:u4.port1
+HEX4[1] << m_seven_segment:u4.port1
+HEX4[2] << m_seven_segment:u4.port1
+HEX4[3] << m_seven_segment:u4.port1
+HEX4[4] << m_seven_segment:u4.port1
+HEX4[5] << m_seven_segment:u4.port1
+HEX4[6] << m_seven_segment:u4.port1
+HEX4[7] << m_seven_segment:u4.port1
+HEX5[0] << m_seven_segment:u5.port1
+HEX5[1] << m_seven_segment:u5.port1
+HEX5[2] << m_seven_segment:u5.port1
+HEX5[3] << m_seven_segment:u5.port1
+HEX5[4] << m_seven_segment:u5.port1
+HEX5[5] << m_seven_segment:u5.port1
+HEX5[6] << m_seven_segment:u5.port1
+HEX5[7] << m_seven_segment:u5.port1
+BTN[0] => ~NO_FANOUT~
+BTN[1] => ~NO_FANOUT~
+LED[0] << <GND>
+LED[1] << <GND>
+LED[2] << <GND>
+LED[3] << <GND>
+LED[4] << <GND>
+LED[5] << <GND>
+LED[6] << <GND>
+LED[7] << <GND>
+LED[8] << <GND>
+LED[9] << <GND>
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+
+
+|TopModule|m_bcd_decorder:u0
+bin[0] => bin[0].IN1
+bin[1] => bin[1].IN1
+bin[2] => bin[2].IN1
+bin[3] => bin[3].IN1
+bin[4] => bin[4].IN1
+bin[5] => bin[5].IN1
+bin[6] => bin[6].IN1
+bin[7] => bin[7].IN1
+bcd[0] <= m_bcd_add:u2.port2
+bcd[1] <= m_bcd_add:u2.port2
+bcd[2] <= m_bcd_add:u2.port2
+bcd[3] <= m_bcd_add:u2.port2
+bcd[4] <= m_bcd_add:u2.port2
+bcd[5] <= m_bcd_add:u2.port2
+bcd[6] <= m_bcd_add:u2.port2
+bcd[7] <= m_bcd_add:u2.port2
+bcd[8] <= m_bcd_add:u2.port2
+bcd[9] <= m_bcd_add:u2.port2
+bcd[10] <= m_bcd_add:u2.port2
+bcd[11] <= m_bcd_add:u2.port2
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_table_l:u0
+adr[0] => dat[0].DATAIN
+adr[1] => Decoder0.IN2
+adr[2] => Decoder0.IN1
+adr[3] => Decoder0.IN0
+dat[0] <= adr[0].DB_MAX_OUTPUT_PORT_TYPE
+dat[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dat[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dat[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+dat[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dat[5] <= <GND>
+dat[6] <= <GND>
+dat[7] <= <GND>
+dat[8] <= <GND>
+dat[9] <= <GND>
+dat[10] <= <GND>
+dat[11] <= <GND>
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_table_h:u1
+adr[0] => Decoder0.IN3
+adr[1] => Decoder0.IN2
+adr[2] => Decoder0.IN1
+adr[3] => Decoder0.IN0
+dat[0] <= <GND>
+dat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+dat[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+dat[3] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dat[4] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+dat[5] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+dat[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dat[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dat[8] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dat[9] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dat[10] <= <GND>
+dat[11] <= <GND>
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_add:u2
+dat_a[0] => dat_a[0].IN1
+dat_a[1] => dat_a[1].IN1
+dat_a[2] => dat_a[2].IN1
+dat_a[3] => dat_a[3].IN1
+dat_a[4] => dat_a[4].IN1
+dat_a[5] => dat_a[5].IN1
+dat_a[6] => dat_a[6].IN1
+dat_a[7] => dat_a[7].IN1
+dat_a[8] => dat_a[8].IN1
+dat_a[9] => dat_a[9].IN1
+dat_a[10] => dat_a[10].IN1
+dat_a[11] => dat_a[11].IN1
+dat_b[0] => dat_b[0].IN1
+dat_b[1] => dat_b[1].IN1
+dat_b[2] => dat_b[2].IN1
+dat_b[3] => dat_b[3].IN1
+dat_b[4] => dat_b[4].IN1
+dat_b[5] => dat_b[5].IN1
+dat_b[6] => dat_b[6].IN1
+dat_b[7] => dat_b[7].IN1
+dat_b[8] => dat_b[8].IN1
+dat_b[9] => dat_b[9].IN1
+dat_b[10] => dat_b[10].IN1
+dat_b[11] => dat_b[11].IN1
+dout[0] <= m_bcd_add4:u0.port4
+dout[1] <= m_bcd_add4:u0.port4
+dout[2] <= m_bcd_add4:u0.port4
+dout[3] <= m_bcd_add4:u0.port4
+dout[4] <= m_bcd_add4:u1.port4
+dout[5] <= m_bcd_add4:u1.port4
+dout[6] <= m_bcd_add4:u1.port4
+dout[7] <= m_bcd_add4:u1.port4
+dout[8] <= m_bcd_add4:u2.port4
+dout[9] <= m_bcd_add4:u2.port4
+dout[10] <= m_bcd_add4:u2.port4
+dout[11] <= m_bcd_add4:u2.port4
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_add:u2|m_bcd_add4:u0
+dat_a[0] => Add0.IN4
+dat_a[1] => Add0.IN3
+dat_a[2] => Add0.IN2
+dat_a[3] => Add0.IN1
+dat_b[0] => Add0.IN8
+dat_b[1] => Add0.IN7
+dat_b[2] => Add0.IN6
+dat_b[3] => Add0.IN5
+cin => Add1.IN10
+cout <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+dout[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_add:u2|m_bcd_add4:u1
+dat_a[0] => Add0.IN4
+dat_a[1] => Add0.IN3
+dat_a[2] => Add0.IN2
+dat_a[3] => Add0.IN1
+dat_b[0] => Add0.IN8
+dat_b[1] => Add0.IN7
+dat_b[2] => Add0.IN6
+dat_b[3] => Add0.IN5
+cin => Add1.IN10
+cout <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+dout[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_bcd_decorder:u0|m_bcd_add:u2|m_bcd_add4:u2
+dat_a[0] => Add0.IN4
+dat_a[1] => Add0.IN3
+dat_a[2] => Add0.IN2
+dat_a[3] => Add0.IN1
+dat_b[0] => Add0.IN8
+dat_b[1] => Add0.IN7
+dat_b[2] => Add0.IN6
+dat_b[3] => Add0.IN5
+cin => Add1.IN10
+cout <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+dout[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|m_seven_segment:u1
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:u2
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:u3
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:u4
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+
+|TopModule|m_seven_segment:u5
+idat[0] => Decoder0.IN3
+idat[1] => Decoder0.IN2
+idat[2] => Decoder0.IN1
+idat[3] => Decoder0.IN0
+odat[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+odat[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+odat[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+odat[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+odat[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+odat[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+odat[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+odat[7] <= <VCC>
+
+

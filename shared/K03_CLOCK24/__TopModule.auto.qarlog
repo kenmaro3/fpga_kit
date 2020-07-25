@@ -1,0 +1,29 @@
+Quartus Prime Archive log --	/home/vagrant/shared/K03_CLOCK24/__TopModule.auto.qarlog
+
+Archive:	/home/vagrant/shared/K03_CLOCK24/__TopModule.auto.qar
+Date:		Sun Jul  5 12:14:12 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/K03_CLOCK24/db/K03_CLOCK24.qpf
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.flow.rpt
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.rpt
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.smsg
+/home/vagrant/shared/K03_CLOCK24/output_files/TopModule.map.summary
+/home/vagrant/shared/K03_CLOCK24/seg7dec.v
+LogicFunc.v
+Seg7Dec.v
+TopModule.qsf
+TopModule.restore.rpt
+TopModule.v
+assignment_defaults.qdf
+cnt1sec.v
+hourcnt.v
+mincnt.v
+sec10.sdc
+seccnt.v
+state.v
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

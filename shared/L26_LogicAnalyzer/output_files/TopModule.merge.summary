@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Fri Jul  3 13:37:14 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : TopModule
+Top-level Entity Name : TopModule
+Family : MAX 10
+Total logic elements : 591
+    Total combinational functions : 436
+    Dedicated logic registers : 411
+Total registers : 411
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

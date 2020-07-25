@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/vagrant/shared/L00_TEMPLATE/",
+	"acds_version" : "Version 20.1.0",
+	"platform" : "linux",
+	"os" : "Ubuntu 18.04.4",
+	"qpf" : "L00_TEMPLATE.qpf"
+}

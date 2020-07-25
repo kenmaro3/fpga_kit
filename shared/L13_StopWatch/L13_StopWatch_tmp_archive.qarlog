@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	/home/vagrant/shared/L13_StopWatch/L13_StopWatch_tmp_archive.qarlog
+
+Archive:	/home/vagrant/shared/L13_StopWatch/L13_StopWatch_tmp_archive.qar
+Date:		Tue Jun 30 07:17:16 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/vagrant/shared/L13_StopWatch/L13_StopWatch.qpf
+/home/vagrant/shared/L13_StopWatch/StopWatch.v
+/home/vagrant/shared/L13_StopWatch/TopModule.qsf
+/home/vagrant/shared/L13_StopWatch/TopModule.v
+/home/vagrant/shared/L13_StopWatch/UniversalCounter.v
+/home/vagrant/shared/L13_StopWatch/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Jun 30 07:17:18 2020
+Source archive file:	/home/vagrant/shared/L13_StopWatch/L13_StopWatch_tmp_archive.qar
+Archive was extracted into	/home/vagrant/shared/L14_KitchenTimer/
+		 - successfully.
